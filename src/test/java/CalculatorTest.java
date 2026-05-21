@@ -3,11 +3,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 
-    @Test
-    void add() {
-
-    private final Calculator calculator = new Calculator();
-
     private final Calculator calculator = new Calculator();
 
     @Test
@@ -20,29 +15,12 @@ class CalculatorTest {
 
     @Test
 
-    void div() {
-        assertEquals(11, calculator.div(15, 4));
-        assertEquals(-5, calculator.div(0, 5));
-    }
-
-    @Test
-    void dif() {
-        assertEquals(13, calculator.div(143, 11));
-        assertEquals(0, calculator.div(7, 0));
-
     void dif() {
         assertEquals(11, calculator.dif(15, 4));
         assertEquals(-5, calculator.dif(0, 5));
 
         assertEquals(15, calculator.add(8, 7));
         assertEquals(-3, calculator.add(5, -8));
-    }
-
-    @Test
-    void diff() {
-        assertEquals(10, calculator.diff(14, 4));
-        assertEquals(-2, calculator.diff(3, 5));
-
     }
 
     @Test
